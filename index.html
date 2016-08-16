@@ -1,0 +1,72 @@
+<!doctype html>
+ <html  manifest=""  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+	<title>GOYA Food</title>
+
+	<!-- CSS -->
+	  
+	 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+	<link rel="stylesheet" href="css/style.css"/> <!-- custom styles -->
+	<link rel="stylesheet" href="css/newcss.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	
+	<!-- JS -->
+	  <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/jquery/jquery-1.10.2.js"></script>
+    <script src="js/lib/jquery/jquery-1.11.4-ui.js"></script> 
+     <script src="js/lib/jquery/jquery-ui.js"></script>
+     
+	 
+	
+	<script src="js/lib/angular/angular-resource.min.js"></script>
+	<script src="js/lib/requirejs/require.js"></script>
+    <script src="js/lib/angular-route/angular-ui-router.min.js"></script>
+    <script src="js/lib/angular/angular-touch.js"></script>
+    <script src="js/lib/jquery/underscore-min-1.8.3.js"></script>
+	
+	 <link href="acute/acute.select/acute.select.css" rel="stylesheet" />
+	  <script type="text/javascript" src="acute/acute.select/acute.select.js"></script>
+ 
+ 
+		
+</head>
+<body>
+	<!-- HEADER -->
+	<div ng-include="'includes/header.html'"></div>	
+	 <div class="loader-class" ng-show="isLoading">
+          <img src="./images/loader.gif"/>
+          <p>Loading...</p>
+      </div>
+	<div ui-view></div>
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<!-- FOOTER -->
+	<div ng-include="'includes/footer.html'"></div>	
+
+<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+	<!--<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>-->
+   <!-- <script src="js/lib/jquery/jquery-1.11.3.min.js"></script>-->
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap/bootstrap-datetimepicker.min.js"></script>
+   
+    <script>
+   
+   (function(){
+    	setTimeout(function  () {
+    		require(['main', function(){
+
+        	}]);
+    	},500)
+        
+    }());
+   	
+    	
+  
+	</script>
+</body>
+</html>
